@@ -19,7 +19,7 @@ export default function Routes(){
             focused,color,size
           }) =>{
             let iconName
-            if(route.name === 'Home'){
+            if(route.name === 'HomeStack'){
               iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline'
             }else if(route.name === 'Sobre'){
               iconName = focused?'ios-list' : 'ios-list-outline'
@@ -40,7 +40,7 @@ export default function Routes(){
       ) }>
         <Tab.Screen name="HomeStack" component={StackRoutes} options={{ tabBarBadge: 6, headerShown:false
  }}  />
-        <Tab.Screen name="Sobre" component={Sobre} />
+        <Tab.Screen name="Sobre" component={Sobre} options={{headerShown:false}} />
         <Tab.Screen name="Contato" component={Contato} options={{
           headerShown:false
         }} />

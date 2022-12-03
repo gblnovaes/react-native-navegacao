@@ -20,8 +20,6 @@ export default function Sobre(){
     return(
         <View style={styles.container}>
             <Text>Sobre View</Text>
-            <Text>{route.params?.name}</Text>
-            <Text>{route.params?.email}</Text>
         </View>
     )
 }
